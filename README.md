@@ -1,0 +1,1 @@
+# Check-Ryzen-Mobile-Capability
