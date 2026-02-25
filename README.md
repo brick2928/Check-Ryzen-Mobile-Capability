@@ -4,8 +4,6 @@ This repo will explain to you how you can quickly check what your Ryzen Mobile C
 
 # Navigation
 
-## Required Software
-
 
 ## Curve Optimizer 
 Checking Curve Optimizer compatiblity is pretty easy. I will recommend you to use UXTU (Universal x86 tuning utility)
