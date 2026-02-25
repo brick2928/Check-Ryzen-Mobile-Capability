@@ -14,4 +14,6 @@ Once you download HWinfo64, you will only need the sensors. Choose Sensors-Only 
 <img width="340" height="270" alt="image" src="https://github.com/user-attachments/assets/a095e968-d185-49f7-b778-13779c214ac7" />
 
 Good! Once you click start, you should see something like this:
+<img width="649" height="940" alt="image" src="https://github.com/user-attachments/assets/018266df-9f88-4203-873b-923ad060f92c" />
+
 
