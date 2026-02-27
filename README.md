@@ -47,13 +47,39 @@ When you are ready, click apply (ignore the fact that this is on a intel system)
 Now watch the graph for a consistent drop in the CPU Core VID(s), did you notice a drop? If you arent sure, you can try setting a +15 or +30 curve optimizer offset temporarily. __In short term, positive curve optimizer will not do any harm but in long term this would degrade the cpu.__
 If your cpu voltage increases with positive curve optimizer or decreases with negative curve optimizer, then your cpu is capable of undervolting.
 
-When making a issue at AMD-Mobile-overclocking-capabilities, please post 2 screenshots like this:
-First screenshot showing lower voltage with negative Curve Optimizer, 0.756MV
+When making a issue at the AMD-Mobile-overclocking-capabilities repo, please post 2 screenshots like this:
+First screenshot showing lower voltage and higher clocks with negative Curve Optimizer, 0.756MV
 <img width="1616" height="1006" alt="image" src="https://github.com/user-attachments/assets/663f91b2-064e-482d-8abe-ffc21d865095" />
 
-Second screenshot showing higher voltage with positive Curve Optimizer, 0.787MV
+Second screenshot showing higher voltage and lower clocks with positive Curve Optimizer, 0.787MV
 <img width="1920" height="1027" alt="image" src="https://github.com/user-attachments/assets/e47a4bb1-35bf-47c8-a580-f901e354a807" />
 
 
 in both screenshots, cinebench r23 is runing in the background. 
-This concludes our testing of the CPU CO capability. If the CPU Core VID(s) differ with different CO offsets, then your CPU supports CO. If the CPU Core VID(s) do not change at all and stay stable, that indicates the CPU does not support undervolting
+This concludes our testing of the CPU CO capability. If the CPU Core VID(s) differ with different CO offsets, then your CPU supports CO. If the CPU Core VID(s) do not change at all and stay stable, that indicates the CPU does not support undervolting.
+
+### iGPU undervolting
+
+iGPU/iGP undervolting is pretty simple. 
+
+Follow the CPU undervolting guide all the way down to "Now start UXTU, go into the custom tab and find the All Core Curve Optimizer option and make sure its ticked at the left for it to apply."
+Instead of "All Core Offset" Choose the "iGPU Offset" option:
+<img width="986" height="231" alt="image" src="https://github.com/user-attachments/assets/5881de5c-b216-400c-8f6b-c404465dde8f" />
+
+Instead of looking at the CPU Core VID(s) you will be looking at the GFX voltage, it will depend on the generation of your CPU what that sensor is called. Here is a example of what it could look like:
+<img width="644" height="370" alt="image" src="https://github.com/user-attachments/assets/a38e6e75-ad23-4993-9631-44fce5240913" />
+
+Start any kind of heavy workload that will fully utilize your iGPU. I will use Furmark 2 as a example. 
+You can install Furmark 2 through CMD by writing "winget install furmark2" and it will automatically install, or alternatively you can install it from [here.](https://www.techpowerup.com/download/furmark/)
+Make sure the stress test runs on your iGPU:
+<img width="539" height="753" alt="image" src="https://github.com/user-attachments/assets/b7730e9f-062b-48bb-83c5-bc9d69135be6" />
+
+Click "RUN TEST" and the stress test will launch.
+Now watch the iGPU behaviour on HWinfo64
+
+Make sure:
+- GPU Utilization is maxed out at 99%+
+- GPU voltage is stable at a specific value, in my case 1v
+- GPU Clock is mostly stable at its maximum
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/e0bb905c-bde3-49f9-a227-6ff8b093546f" />
+Now, set a negative iGPU Ofsset, -15 should be ssa
