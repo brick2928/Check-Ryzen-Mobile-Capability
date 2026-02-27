@@ -71,7 +71,9 @@ Instead of looking at the CPU Core VID(s) you will be looking at the GFX voltage
 
 Start any kind of heavy workload that will fully utilize your iGPU. I will use Furmark 2 as a example. 
 You can install Furmark 2 through CMD by writing "winget install furmark2" and it will automatically install, or alternatively you can install it from [here.](https://www.techpowerup.com/download/furmark/)
+
 Make sure the stress test runs on your iGPU:
+
 <img width="539" height="753" alt="image" src="https://github.com/user-attachments/assets/b7730e9f-062b-48bb-83c5-bc9d69135be6" />
 
 Click "RUN TEST" and the stress test will launch.
@@ -82,4 +84,7 @@ Make sure:
 - GPU voltage is stable at a specific value, in my case 1v
 - GPU Clock is mostly stable at its maximum
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/e0bb905c-bde3-49f9-a227-6ff8b093546f" />
-Now, set a negative iGPU Ofsset, -15 should be ssa
+Now, set a negative iGPU Offset, -15 should be safe starting point. Watch the graph and the sensor for any changes in the voltage.
+If you arent sure wether the voltage changed, you can try setting a +30 iGPU Offset.
+
+If the VID goes up or down by 30mv or more, then your CPU is CO capable. If the iGPU voltage stays where it is, the iGPU isnt not capable of utilizing iGPU Curve Optimizer. 
