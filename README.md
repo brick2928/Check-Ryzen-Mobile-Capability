@@ -10,7 +10,13 @@ This repo will explain to you how you can quickly check what your Ryzen Mobile C
 ## Required Software
 ### Universal x86 Tuning Utility
 Universal x86 Tuning Utility is a software that lets you tune your CPU in a lot of ways. We will be mainly using this tool for undervolting. 
-You can download UXTU(Universal x86 Tuning Utility) from [here.](https://github.com/JamesCJ60/Universal-x86-Tuning-Utility/releases) UXTU needs a lot of dependencies like MS .net desktop runtime and pawnIO, if you struggle somehow you can join the discord server of this software [here.](https://discord.gg/u8eEAMTzU4)
+You can download UXTU(Universal x86 Tuning Utility) from Command line using winget via "winget install JamesCJ60.Universalx86TuningUtility",
+
+I recommend this because winget will install dependencies you need automatically excluding PawnIO.
+
+Or you can get the official installer and portable from [here.](https://github.com/JamesCJ60/Universal-x86-Tuning-Utility/releases) 
+
+UXTU needs a lot of dependencies like MS .net desktop runtime and pawnIO, if you struggle somehow you can join the discord server of this software [here.](https://discord.gg/u8eEAMTzU4)
 <img width="861" height="480" alt="image" src="https://github.com/user-attachments/assets/923fdecf-3cd4-4007-9fd4-0d2bdedc73ac" />
 
 This is the custom tab. You will be spending most of your time here. As you can see its the third tab on the left side, in this screenshot I scrolled down to showcase the curve optimizer options.
