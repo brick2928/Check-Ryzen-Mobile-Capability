@@ -34,8 +34,8 @@ After choosing sensors only mode and pressing start, you should now be seeing so
 
 We will spend most of our time here. 
 
-## Curve Optimizer 
-### CPU Undervolting
+# Curve Optimizer 
+## CPU Undervolting
 Checking Curve Optimizer compatiblity is pretty easy. I will recommend you to use UXTU (Universal x86 tuning utility)
 and HWinfo64, even though CPU-Z and GPU-Z can technically also get the job done.
 
@@ -68,7 +68,7 @@ Second screenshot showing higher voltage and lower clocks with positive Curve Op
 in both screenshots, cinebench r23 is runing in the background. 
 This concludes our testing of the CPU CO capability. If the CPU Core VID(s) differ with different CO offsets, then your CPU supports CO. If the CPU Core VID(s) do not change at all and stay stable, that indicates the CPU does not support undervolting.
 
-### iGPU undervolting
+## iGPU undervolting
 
 iGPU/iGP undervolting is pretty simple. 
 
