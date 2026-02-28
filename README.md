@@ -36,8 +36,7 @@ We will spend most of our time here.
 
 # Curve Optimizer 
 ## CPU Undervolting
-Checking Curve Optimizer compatiblity is pretty easy. I will recommend you to use UXTU (Universal x86 tuning utility)
-and HWinfo64, even though CPU-Z and GPU-Z can technically also get the job done.
+Checking Curve Optimizer compatiblity is pretty easy. I will recommend you to use UXTU (Universal x86 tuning utility) and HWinfo64.
 
 Curve Optimizer is AMD's undervolting technology, its available for both the CPU and the iGPU. There are multiple ways to check the current iGPU and CPU voltage, however we will be using HWinfo64 since its a very capable tool picking up on pretty much every sensor on the device you could need including CPU VID and GFX Voltage.
 
