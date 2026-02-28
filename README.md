@@ -1,10 +1,11 @@
-## Welcome
+# Welcome
 This repo will explain to you how you can quickly check what your Ryzen Mobile CPU is capable of! 
 
 ## Navigation
 
-
-
+[CPU Undervolting Guide](https://github.com/brick2928/Check-Ryzen-Mobile-Capability/edit/main/README.md#cpu-undervolting)
+[iGPU Undervolting Guide](https://github.com/brick2928/Check-Ryzen-Mobile-Capability/edit/main/README.md#igpu-undervolting)
+Memeory overclocking Guide - TBD
 
 ## Required Software
 ### Universal x86 Tuning Utility
@@ -94,6 +95,7 @@ Make sure:
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/e0bb905c-bde3-49f9-a227-6ff8b093546f" />
 Now, set a negative iGPU Offset, -15 should be safe starting point. Watch the graph and the sensor for any changes in the voltage.
 If you arent sure wether the voltage changed, you can try setting a +30 iGPU Offset.
+
 **With a short test, positive curve optimizer will not do any harm, but if you use a positive CO offset consistently it could degrade the iGPU.**
 
 If the VID goes up or down by 30mv or more, then your CPU is CO capable. If the iGPU voltage stays where it is, the iGPU isnt not capable of utilizing iGPU Curve Optimizer. 
