@@ -98,4 +98,4 @@ If you arent sure wether the voltage changed, you can try setting a +30 iGPU Off
 
 **With a short test, positive curve optimizer will not do any harm, but if you use a positive CO offset consistently it could degrade the iGPU.**
 
-If the VID goes up or down by 30mv or more, then your CPU is CO capable. If the iGPU voltage stays where it is, the iGPU isnt not capable of utilizing iGPU Curve Optimizer. 
+If the VID goes up or down by 20mv or more, then your CPU is CO capable. If the iGPU voltage stays where it is, the iGPU isnt not capable of utilizing iGPU Curve Optimizer. 
