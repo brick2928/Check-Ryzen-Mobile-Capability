@@ -1,5 +1,5 @@
 # Welcome
-This repo will explain to you how you can quickly check what your Ryzen Mobile CPU is capable of! 
+This repo will explain to you how you can quickly check what your Ryzen Mobile CPU is capable of. 
 
 ## Navigation
 
