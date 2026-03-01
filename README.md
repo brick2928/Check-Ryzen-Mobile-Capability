@@ -6,6 +6,7 @@ This repo will explain to you how you can quickly check what your Ryzen Mobile C
 [CPU Undervolting Guide](https://github.com/brick2928/Check-Ryzen-Mobile-Capability?tab=readme-ov-file#cpu-undervolting)
 
 [iGPU Undervolting Guide](https://github.com/brick2928/Check-Ryzen-Mobile-Capability?tab=readme-ov-file#igpu-undervolting)
+
 Memeory overclocking Guide - TBD
 
 ## Required Software
