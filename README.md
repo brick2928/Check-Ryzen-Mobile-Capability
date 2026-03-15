@@ -41,7 +41,7 @@ Checking Curve Optimizer compatiblity is pretty easy. I will recommend you to us
 
 Curve Optimizer is AMD's undervolting technology, its available for both the CPU and the iGPU. There are multiple ways to check the current iGPU and CPU voltage, however we will be using HWinfo64 since its a very capable tool picking up on pretty much every sensor on the device you could need including CPU VID and GFX Voltage.
 
-Start HWinfo64 with Sensors only mode and then look for the Core VID(s) sensor. It should looks something like this:
+Start HWinfo64 with Sensors only mode and then look for the Core VID(s) sensor. It should look something like this:
 <img width="1220" height="585" alt="image" src="https://github.com/user-attachments/assets/f9ffca9e-ed9b-47e4-8683-3eeadd6bb7b9" />
 
 The amount of sensors you have on your device will depend on your motherboard manufacturer and CPU generation, however these sensors in the screenshot should look the same for the most part.
